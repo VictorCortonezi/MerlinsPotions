@@ -1,0 +1,30 @@
+<Html>
+<head>
+<script type="text/javascript">
+function adicionarLinha()
+{
+   var local=document.getElementById('tabela');
+   var tblBody = local.tBodies[0];
+   var newRow = tblBody.insertRow(-1);
+   var newCell0 = newRow.insertCell(0);
+   newCell0.innerHTML = '<td>Coluna 1 Nova</td>'; 
+  var newCell1 = newRow.insertCell(1);
+  newCell1.innerHTML = '<td>Coluna 2 Nova</td>';
+ var newCell2 = newRow.insertCell(2);
+ newCell2.innerHTML = '<td>Coluna 3 Nova</td>';
+}
+</script>
+</head>
+<body>
+<table id="tabela">
+   <tbody>
+       <tr>
+           <td>Coluna 1</td>
+           <td>Coluna 2</td>
+           <td>Coluna 3</td>
+      </tr>
+  </tbody>
+</table>
+<input type="button" onclick="adicionarLinha();">
+</body>
+</html>
